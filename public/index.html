@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- defer -> script loads aftre html -->
+    <script defer src="./app.js"></script>
+</head>
+
+<body class="light">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+
+            <!-- Dropdown -->
+            <li class="nav-item has-dropdown">
+                <a href="#">Theme</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a id="light" href="#">Light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="dark" href="#">Dark</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="solar" href="#">Solarize</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">Login</li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <img class="logo" src="logo.jpg" alt="Some logo" />
+        <h1>
+            Hi👋
+            <br />
+            Welcome to our website!
+        </h1>
+
+        <p>
+            HTML, CSS, Javascript, Node.js, React.js
+        </p>
+    </header>
+
+    <!-- content -->
+    <main>
+        <div id="content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, iusto sunt explicabo aliquam sint
+            consectetur consequatur labore eius a, veniam dicta doloremque vitae, sequi rerum magnam quaerat impedit
+            voluptatum dolorem quis nesciunt harum excepturi reiciendis maxime delectus! Ab odit quibusdam eveniet
+            dolorum
+            commodi. Error qui sunt, blanditiis rem ad sequi perspiciatis a ea dolorem accusantium, incidunt,
+            exercitationem
+            voluptates dicta deleniti officiis laboriosam enim est illum soluta tempore quas corrupti. Maiores,
+            blanditiis
+            ducimus culpa dicta sit dolores reiciendis. Odio ex doloremque totam vitae consequuntur praesentium iusto.
+            Laborum aspernatur assumenda rerum totam reprehenderit? Incidunt, esse unde animi aliquam obcaecati officia
+            commodi error qui veniam dolorem porro id deserunt consectetur, voluptatum magni facere aperiam? Omnis ut
+            enim
+            doloribus! Odit illum voluptate minus dicta!
+        </div>
+    </main>
+
+</body>
+
+</html>

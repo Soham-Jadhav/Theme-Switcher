@@ -15,17 +15,15 @@ if (theme) {
 
 // Button event handeler
 darkButton.onclick = () => {
-    // body.classList.remove('light');
-    // body.classList.add('dark');
     body.classList.replace('light', 'dark');
     localStorage.setItem('theme', 'dark');
 };
-
 lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
     localStorage.setItem('theme', 'light');
 };
 
+// Solar coloring
 solarButton.onclick = () => {
     if (body.classList.contains('solar')) {
         body.classList.remove('solar');

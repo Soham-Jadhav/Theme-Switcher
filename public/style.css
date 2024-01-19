@@ -4,6 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text);
     background: var(--bg);
+
     /* animate change */
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
@@ -16,7 +17,6 @@ main {
 }
 
 ul {
-    /* circle, disc, etc. */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,17 +24,15 @@ ul {
 
 a {
     color: currentColor;
-    /* Use the nearest defined color i.e. parent color*/
     text-decoration: none;
 }
 
 .navbar {
     height: 70px;
     width: 100%;
-    /* background: black;
-    color: white */
     color: var(--text);
     background: var(--bg-nav);
+
     /* animate change */
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
@@ -48,15 +46,14 @@ a {
 
 header {
     padding: 1em;
-    /* background: red; */
     color: var(--text);
     background: var(--bg-nav);
+
     /* animate change */
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
     margin-bottom: 1em;
     padding-bottom: 3.5em;
     text-align: center;
-    /* clip-path -> to make triangle, put a bunch of points(x%, y%) around the elem that one can move around */
     clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0% 65%, 0% 0%);
 }
 
@@ -65,10 +62,10 @@ header {
     width: 500px;
     opacity: 0;
     z-index: 2;
-    /* background: blue; */
     color: var(--text);
     background: var(--bg-dropdown);
     border-top: 2px solid var(--border-color);
+
     /* animate change */
     transition: background 500ms ease-in-out, border 1000ms ease-in-out, color 1000ms ease-in-out;
 
@@ -93,7 +90,6 @@ header {
     pointer-events: auto;
 }
 
-/* take up entire space */
 .dropdown-item a {
     width: 100%;
     height: 100%;
@@ -102,15 +98,12 @@ header {
     font-weight: bold;
 }
 
-/* make circles */
 .dropdown-item a::before {
-    /*::before sudo element --> add element before the link text*/
     content: ' ';
     border: 2px solid var(--border-color);
     transition: border 1000ms ease-in-out;
     border-radius: 50%;
 
-    /* refine alignment & margin */
     width: 2rem;
     height: 2rem;
     display: inline-block;
@@ -127,7 +120,7 @@ header {
 }
 
 :root {
-    /* vars with colors, breakpoints etc. */
+    /* CSS vars with colors, breakpoints etc. */
     --gray0: #f8f8f8;
     --gray1: #dbe1e8;
     --gray2: #b2becd;
@@ -159,7 +152,7 @@ header {
 }
 
 .solar {
-    /* overide colors */
+    /* overide to solar colors */
     --gray0: #fbffd4;
     --gray1: #f7f8d0;
     --gray2: #b6f880;
@@ -171,8 +164,6 @@ header {
 
 /* Multicolor logo */
 @keyframes color-rotate {
-
-    /* like color wheel */
     from {
         filter: hue-rotate(0deg);
     }
